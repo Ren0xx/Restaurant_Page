@@ -28,6 +28,11 @@ footer{
 h1{
     font-size: 55px;
 }
+img{
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+}
 #content{
     background-color: hsla(128, 44%, 56%, 0.8);
     padding: 25px;  
@@ -41,6 +46,7 @@ h1{
     flex-direction: column;
     gap: 100px;
     padding-bottom: 200px;
+    height: 1000px;
 }
 #content div{
     display: flex;
@@ -59,6 +65,9 @@ h1{
     list-style-type: none;
     column-gap: 20px;
     padding: 0;
+}
+#content div p{
+    padding: 25px;
 }
 .headline{
     display: flex;
@@ -82,4 +91,8 @@ h1{
     border: 0.5px solid  rgba(43, 209, 48, 0.9);
     border-top-left-radius: 15px;
     border-top-right-radius: 25px;
+    cursor: pointer;
+}
+.tabs div:hover{
+    background-color: rgba(43, 156, 47, 1)
 }
