@@ -4,6 +4,19 @@ import menu from "./menu.js";
 // const container = document.querySelector('#content');
 const content = document.querySelector('#content');
 
+const homeTab = document.querySelector('#home-tab');
+const menuTab = document.querySelector('#menu-tab');
+const contactTab = document.querySelector('#contact-tab');
+
 home(content);
-menu(content);
-contact(content);
+
+homeTab.addEventListener('click', () => {
+    home(content);
+})
+menuTab.addEventListener('click', () => {
+    menu(content);
+})
+contactTab.addEventListener('click', () => {
+    contact(content);
+})
+

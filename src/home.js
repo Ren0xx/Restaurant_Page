@@ -21,4 +21,6 @@ export default function home(content){
     
     content.appendChild(header);
     content.appendChild(description);
+
+    return content;
 }

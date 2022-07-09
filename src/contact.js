@@ -48,6 +48,6 @@ export default function contact(content){
     //manager
     //main chef
 
-
+    return content;
 
 }
