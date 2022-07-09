@@ -23,27 +23,47 @@ footer{
     font-size: 15px;
     padding: 15px;
     background-color: hsla(122, 76%, 37%, 0.9);
+    
+}
+h1{
+    font-size: 55px;
 }
 #content{
-    height: 100vh;
     background-color: hsla(128, 44%, 56%, 0.8);
     padding: 25px;  
     width: 75vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #373a44;
+    line-height: 1.5;
+    font-size: 18px;
+    flex-direction: column;
+    gap: 100px;
+    padding-bottom: 200px;
+}
+#content div{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#content div h3{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+#content div ul{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    list-style-type: none;
+    column-gap: 20px;
+    padding: 0;
 }
 .headline{
     display: flex;
     justify-content: center;
 
-}
-.description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    margin-bottom: 0px;
-    color: #373a44;
-    line-height: 1.5;
-    font-size: 18px;
 }
 .tabs{
     display: grid;

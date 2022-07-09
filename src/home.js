@@ -13,7 +13,6 @@ export default function home(content){
         .then(text => {
             paragraph.textContent = text;
         })
-    // paragraph.textContent = 'Its my page';
  
     const description = document.createElement('div');
     description.classList.add('description');

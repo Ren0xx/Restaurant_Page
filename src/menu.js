@@ -2,16 +2,18 @@ export default function menu(content){
 
     content.replaceChildren();
 
-    const header = document.createElement('h1');
-    header.textContent = 'Menu';
+    const mainHeader = document.createElement('h1');
+    mainHeader.textContent = 'Menu';
 
-    const subheader1 = document.createElement('h3');
-    subheader1.textContent = 'Beverages';
+    
 
 
     //beverages
+    const subheader1 = document.createElement('h3');
     const beverages = document.createElement('div');
     const bevList = document.createElement('ul');
+    
+    subheader1.textContent = 'Beverages';
 
     for (let i = 0; i < 6; i++) {
         const li = document.createElement('li');
@@ -24,11 +26,11 @@ export default function menu(content){
     
     //main dishes
     const subheader2 = document.createElement('h3');
-    subheader2.textContent = 'Main dishes';
-
     const mainDishes = document.createElement('div');
     const mainList = document.createElement('ul');
     
+    subheader2.textContent = 'Main dishes';
+
     for (let i = 0; i < 6; i++) {
         const li = document.createElement('li');
         li.textContent = `Main dish number ${i + 1}`;
@@ -39,10 +41,11 @@ export default function menu(content){
     mainDishes.appendChild(mainList);
     
     const subheader3 = document.createElement('h3');
-    subheader3.textContent = 'Desserts';
-    
     const desserts = document.createElement('div');
     const dessertsList = document.createElement('ul');
+    
+    subheader3.textContent = 'Desserts';
+    
 
     for (let i = 0; i < 6; i++) {
         const li = document.createElement('li');
@@ -53,11 +56,7 @@ export default function menu(content){
     desserts.appendChild(dessertsList);
 
 
-    content.appendChild(header);
+    content.append(mainHeader, beverages, mainDishes, desserts);
 
-
-    content.appendChild(beverages);
-    content.appendChild(mainDishes);
-
-    content.appendChild(desserts);
+    return content;
 }

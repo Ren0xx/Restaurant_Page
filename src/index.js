@@ -6,3 +6,4 @@ const content = document.querySelector('#content');
 
 home(content);
 menu(content);
+contact(content);
