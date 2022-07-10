@@ -5,9 +5,6 @@ export default function menu(content){
     const mainHeader = document.createElement('h1');
     mainHeader.textContent = 'Menu';
 
-    
-
-
     //beverages
     const subheader1 = document.createElement('h3');
     const beverages = document.createElement('div');
